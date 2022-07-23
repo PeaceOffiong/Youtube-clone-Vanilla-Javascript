@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>Youtube</title>
+</head>
+<body class="body">
+    <nav class="nav">
+        <div class="nav-center">
+            <div class="nav-header">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="youtube.png" alt="logo" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search" class="input">
+                    <button type="submit" class="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="elements">
+                    <button class="microphone">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="video-sign">
+                        <i class="fas fa-video"></i>
+                    </button>
+                    <button class="app">
+                        <i class="fas fa-qrcode"></i>
+                    </button>
+                    <button class="bell">
+                        <i class="far fa-bell"></i>
+                    </button>
+                    <img src="CNEM4759.JPG" alt="image" class="image">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner"></div>
+
+    <aside class = "slidebar">
+        <div class="slide-bar center">
+            <div class="slidebar-header">
+                <button class="nav-toggle2">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="youtube.png" alt="logo" class="logo2">
+            </div>
+            <div class="slide-elements">
+                <ul class="links">
+                    <li><i class="fas fa-home"></i><a  href="index.html"></i>Home</a></li>
+                    <li><i class="far fa-compass"></i><a href="about.html">About</a></li>
+                    <li><i class="fas fa-play-circle"></i><a href="shorts.html">shorts</a></li>
+                    <li><i class="fab fa-youtube"></i><a href="subscriptions.html">Subscriptions</a></li>
+                </ul>
+                <div class="underline"></div>
+                <ul class="links">
+                    <li><i class="fas fa-home"></i><a  href="Library.html"></i>Library</a></li>
+                    <li><i class="fas fa-history"></i><a href="History.html">History</a></li>
+                    <li><i class="fas fa-play-circle"></i><a href="your.html">Your videos</a></li>
+                    <li><i class="fab fa-youtube"></i><a href="watch laters.html">Watch later</a></li>
+                    <li><i class="fa fa-thumbs-up"></i><a href="liked.html">Liked Videos</a></li>
+                </ul>
+                <div class="underline"></div>
+                <div class="subscriptions">
+                    <h4>subscriptions</h4>
+                    <p>sophiology</p>
+                    <p>youkeyy</p>
+                    <p>travery media</p>
+                    <p>nne unfiltered</p>
+                    <p>toni olaoye</p>
+                    <p>yvonne victoria</p>
+
+                    <!-- add javascript that automaically adds and not distort the css -->
+
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <section class="video-container">
+        <video class="video-player" src="HHDE0324.mp4" id ="main-video"></video>
+            <div class="progressAreaTime"></div>
+            <div class="controls">
+                <div class="progress-area">
+                    <div class = "progress-bar">
+                        <span></span>
+                    </div>
+                </div> 
+                <div class="controls-list">
+                    <div class="controls-left">
+                        <span class="icon">
+                            <i class="material-icons play_pause">play_arrow</i>
+                        </span>
+                        <span class="icon">
+                            <button class="material-icons fast-forward"> <i class="fa fa-step-forward"></i></button>
+                        </span>
+                        
+                        <span class="icon">
+                            <button class="material-icons volume">
+                                <i class="fas fa-volume-up"></i>
+                            </button>
+                                <input type="range" min="0" max="100" class="volume_range">
+                        </span>
+                        <div class="timer">
+                            <span class="current">0.00</span> / <span class="duration">0:00</span>
+                        </div>
+                    </div>
+    
+                    <div class="controls-right">
+                        <span class="icon">
+                            <i class="material-icons auto-play"></i>
+                        </span>
+                        <span class="icon">
+                            <button class="material-icons caption"> <i class="fas fa-closed-captioning"></i></button>
+                        </span>
+                        <span class="icon">
+                            <button class="material-icons settingsBtn"> <i class="fa fa-cog"></i></button>
+                        </span>
+                        <span class="icon">
+                            <button class="material-icons picture-in-picture"> <i class="far fa-square"></i></button>
+                        </span>
+                        <span class="icon">
+                            <button class="material-icons fullscreen"><i class="fas fa-expand"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="settings">
+                <div class="playback">
+                    <span class="playback Speed"></span>
+                    <ul>
+                        <li><i class="fas fa-shoe-prints"></i>Annotation</li>
+                        <li><i class="fas fa-play-circle"></i>Playback speed</li>
+                        <li><i class="fas fa-closed-captioning"></i>Subtitles/CC</li>
+                        <li><i class="fab fa-youtube"></i>Quality</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="title">
+        <div class="heading">
+            <small>#vlogger</small>
+        <h4>A Day in my life as a content creator and a frontend developer</h4>   
+        </div>
+        <div class="description">
+            <div class="title-left">
+                <p><span class="views-number">1200 </span><span class="views">views </span><span class="date"> may 20 2022</span></p>
+            </div>
+            <div class="title-right">
+                <button><i class="fas fa-thumbs-up"></i>600</button>
+                <button><i class="fas fa-thumbs-down"></i>DISLIKE</button>
+                <button><i class='fas fa-share'></i>SHARE</button>
+                <button><i class="fa fa-scissors"></i>CLIP</button>
+                <button><i class="fa fa-plus"></i>ADD</button>
+                <button class="cont">...</button>
+            </div>
+        </div>
+        <div class="underline"></div>
+        <div class="channel"></div>
+    </section>
+    <section class="recommendations"></section>
+    <script src="app.js"></script>
+</body>
+</html>
