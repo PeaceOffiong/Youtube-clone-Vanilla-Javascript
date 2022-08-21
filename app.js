@@ -16,9 +16,10 @@ picture_in_picture = document.querySelector('.picture-in-picture');
 fullscreen = document.querySelector('.fullscreen');
 settings = document.querySelector('#settings');
 playback = document.querySelector('.playback');
-i = document.querySelector(".fas.fa-volume-up")
+i = document.querySelector(".fas.fa-volume-up");
+form = document.querySelector("search-bar")
 
-// eventListeners
+// // eventListeners
 play_pause.addEventListener("click", pause_play)
 
 function pause_play(){
@@ -57,15 +58,6 @@ mainVideo.addEventListener("timeupdate", (e)=>{
     let videoDuration = e.target.duration;
     let progressWidth = (currentvideoTime/videoDuration) *100;
     progressBar.style.width = `${progressWidth}%`
-});
-
-const mainb = document.querySelector("body");
-window.addEventListener("keydown", function(e){
-    e.preventDefault();
-     if(e.key === "enter"){
-         console.log("true");
-            // pause_play();
-    }
 });
 
 
