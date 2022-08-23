@@ -17,7 +17,8 @@ fullscreen = document.querySelector('.fullscreen');
 settings = document.querySelector('#settings');
 playback = document.querySelector('.playback');
 i = document.querySelector(".fas.fa-volume-up");
-form = document.querySelector("search-bar")
+form = document.querySelector("search-bar");
+const showmore = document.querySelector(".expansion")
 
 // // eventListeners
 play_pause.addEventListener("click", pause_play)
@@ -239,3 +240,9 @@ function shortForm(){
     console.log(views.classList.contains("hide"));
     console.log(viewsNumber.innerHTML > 900);
 };
+
+showmore.addEventListener("click", showMore)
+
+function showMore(e) {
+    console.log(e.previousSibling);
+}
