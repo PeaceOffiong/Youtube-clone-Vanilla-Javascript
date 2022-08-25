@@ -18,9 +18,10 @@ settings = document.querySelector('#settings');
 playback = document.querySelector('.playback');
 i = document.querySelector(".fas.fa-volume-up");
 form = document.querySelector("search-bar");
-const showmore = document.querySelector(".expansion")
+const showmore = document.querySelector(".expansion");
+const expandP = document.querySelector(".decs-p")
 
-// // eventListeners
+// eventListeners
 play_pause.addEventListener("click", pause_play)
 
 function pause_play(){
@@ -237,12 +238,8 @@ function shortForm(){
     if(views.classList.contains("hide") &&  viewsNumber.innerHTML > 900){
         return viewsNumber.innerHTML + "k";
     };
-    console.log(views.classList.contains("hide"));
-    console.log(viewsNumber.innerHTML > 900);
 };
 
-showmore.addEventListener("click", showMore)
-
-function showMore(e) {
-    console.log(e.previousSibling);
-}
+showmore.addEventListener("click", (e) => {
+    expandP.classList.toggle("showMore")
+})

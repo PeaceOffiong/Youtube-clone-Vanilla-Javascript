@@ -552,8 +552,15 @@ video{
     height: 60px;
 }
 
+.text small{
+    color: grey;
+    line-height: 10px;
+    font-size: 13.5px;
+}
+
 h3, small, i{
     color: white;
+    font-size: 16px;
 }
 
 .first-line{
@@ -612,11 +619,8 @@ h3, small, i{
     cursor: pointer;
 }
 
-
 .rectangle{
     padding: 10px;
-    /* height: 40px;
-    width: 100px; */
     background: #424242;
     text-transform: uppercase;
     align-items: center;
@@ -636,9 +640,36 @@ h3, small, i{
     margin: 0 20px;
 }
 
-.Recommended{
-    height:50px;
+.rec.center{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
 }
+
+.video-contain{
+    overflow: hidden;
+    height: 135px;
+    width: 295px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.rec.center .title h3{
+    font-size: 15px;
+}
+
+.rec.center .title{
+    margin: 0 15px;
+}
+
+body .underline{
+    width: 59%;
+    margin: 10px 35px;
+}
+
 
 @media (min-width:650px){
     .nav-header{
@@ -681,6 +712,24 @@ h3, small, i{
     
 }
 
+
+@media(min-width : 1050px){
+    .overall {
+        display: flex;
+        flex-direction: row;
+    }
+    .recommendations{
+        width: 40%;
+    }
+    .title{
+        width: 60%;
+    }
+
+    body .underline{
+        width: 60%;
+    }
+}
+
 @media (max-width:450px){
     .controls .controls-list{
         display:none;
@@ -690,6 +739,9 @@ h3, small, i{
 @media (max-width: 1018px){
     .title{
         width: 100%;
+    }
+    body .underline {
+        width: 90%;
     }
 }
 
